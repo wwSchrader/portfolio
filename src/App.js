@@ -3,6 +3,7 @@ import './App.css';
 import Particles from 'react-particles-js';
 import particlesParams from './assets/particles.json';
 import NavigationBar from './NavigationBar.js';
+import MainBody from './MainBody.js';
 
 class App extends Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class App extends Component {
       <div className="App">
         <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
         <NavigationBar />
+        <MainBody />
       </div>
     );
   }
