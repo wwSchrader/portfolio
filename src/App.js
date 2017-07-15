@@ -9,6 +9,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.particlesParams = particlesParams;
+
+    this.state = {
+      page: 'home'
+    }
   }
 
   render() {
@@ -23,7 +27,7 @@ class App extends Component {
       <div className="App">
         <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
         <NavigationBar />
-        <MainBody />
+        <MainBody currentState={this.state.page} />
       </div>
     );
   }
