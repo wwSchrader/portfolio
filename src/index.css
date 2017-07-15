@@ -4,10 +4,3 @@ body {
   font-family: sans-serif;
 }
 
-#particles {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background-color: red;
-}

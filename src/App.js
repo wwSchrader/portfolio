@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     var particleStyle = {
       position: 'absolute',
-      zindex: -1,
+      zIndex: -1,
       left: 0,
       top: 0
     };
@@ -36,6 +36,7 @@ class App extends Component {
         <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
         <NavigationBar currentPageState={this.state.page} onNavigationPress={this.handleNavigationButtonPress} />
         <MainBody currentState={this.state.page} />
+
       </div>
     );
   }
