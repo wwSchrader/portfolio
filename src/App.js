@@ -13,7 +13,15 @@ class App extends Component {
     this.state = {
       page: 'home'
     }
+
+    this.handleNavigationButtonPress = this.handleNavigationButtonPress.bind(this);
   }
+
+  handleNavigationButtonPress(newPageState) {
+      this.setState({
+        page: newPageState
+      });
+    }
 
   render() {
     var particleStyle = {
@@ -26,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
-        <NavigationBar />
+        <NavigationBar currentPageState={this.state.page} onNavigationPress={this.handleNavigationButtonPress} />
         <MainBody currentState={this.state.page} />
       </div>
     );

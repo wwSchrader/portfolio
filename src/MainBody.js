@@ -16,6 +16,7 @@ class MainBody extends Component {
     render() {
         switch (this.currentState) {
           case 'home':
+          default:
             return (<HomePageBody />);
         }
     }
