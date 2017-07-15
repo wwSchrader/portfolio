@@ -11,7 +11,7 @@ class App extends Component {
     this.particlesParams = particlesParams;
 
     this.state = {
-      page: 'home'
+      page: 'Home'
     }
 
     this.handleNavigationButtonPress = this.handleNavigationButtonPress.bind(this);

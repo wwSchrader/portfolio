@@ -5,6 +5,12 @@ class NavigationBar extends Component {
     constructor(props) {
         super(props);
 
+        this.homeState = 'Home';
+        this.aboutState = 'About';
+        this.skillsState = 'Skills';
+        this.projectsState = 'Projects';
+        this.contactState = 'Contact';
+
         this.state = {
             currentPageState: props.currentPageState
         };
@@ -35,8 +41,8 @@ class NavigationBar extends Component {
                 <Navbar.Brand>Warren Schrader</Navbar.Brand>
               </Navbar.Header>
               <Nav>
-                <NavItem eventKey={1} href='#' active={this.checkCurrentPageStatus('home')} onClick={() => {this.handleNavigationItemPress('home')}}>Home</NavItem>
-                <NavItem eventKey={2} href='#'>About</NavItem>
+                <NavItem eventKey={1} href='#' active={this.checkCurrentPageStatus(this.homeState)} onClick={() => {this.handleNavigationItemPress(this.homeState)}}>{this.homeState}</NavItem>
+                <NavItem eventKey={2} href='#' active={this.checkCurrentPageStatus(this.aboutState)} onClick={() => {this.handleNavigationItemPress(this.aboutState)}}>{this.aboutState}</NavItem>
                 <NavItem eventKey={3} href='#'>Skills</NavItem>
                 <NavItem eventKey={4} href='#'>Projects</NavItem>
                 <NavItem eventKey={5} href='#'>Contact</NavItem>

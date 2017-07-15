@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import HomePageBody from './HomePageBody.js';
+import AboutPageBody from './AboutPageBody.js';
 
 class MainBody extends Component {
   constructor(props) {
     super(props);
-    this.currentState = props.currentState;
+    this.state = {
+      currentState: props.currentState
+    };
   }
 
   componentWillReceiveProps(nextProps) {
@@ -14,8 +17,10 @@ class MainBody extends Component {
     }
 
     render() {
-        switch (this.currentState) {
-          case 'home':
+        switch (this.state.currentState) {
+          case 'About':
+            return (<AboutPageBody />);
+          case 'Home':
           default:
             return (<HomePageBody />);
         }
