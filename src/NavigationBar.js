@@ -7,7 +7,6 @@ class NavigationBar extends Component {
 
         this.homeState = 'Home';
         this.aboutState = 'About';
-        this.skillsState = 'Skills';
         this.projectsState = 'Projects';
         this.contactState = 'Contact';
 
@@ -45,9 +44,8 @@ class NavigationBar extends Component {
                   <Nav>
                     <NavItem eventKey={1} href='#' active={this.checkCurrentPageStatus(this.homeState)} onClick={() => {this.handleNavigationItemPress(this.homeState)}}>{this.homeState}</NavItem>
                     <NavItem eventKey={2} href='#' active={this.checkCurrentPageStatus(this.aboutState)} onClick={() => {this.handleNavigationItemPress(this.aboutState)}}>{this.aboutState}</NavItem>
-                    <NavItem eventKey={3} href='#' active={this.checkCurrentPageStatus(this.skillsState)} onClick={() => {this.handleNavigationItemPress(this.skillsState)}}>{this.skillsState}</NavItem>
-                    <NavItem eventKey={4} href='#' active={this.checkCurrentPageStatus(this.projectsState)} onClick={() => {this.handleNavigationItemPress(this.projectsState)}}>{this.projectsState}</NavItem>
-                    <NavItem eventKey={5} href='#' active={this.checkCurrentPageStatus(this.contactState)} onClick={() => {this.handleNavigationItemPress(this.contactState)}}>{this.contactState}</NavItem>
+                    <NavItem eventKey={3} href='#' active={this.checkCurrentPageStatus(this.projectsState)} onClick={() => {this.handleNavigationItemPress(this.projectsState)}}>{this.projectsState}</NavItem>
+                    <NavItem eventKey={4} href='#' active={this.checkCurrentPageStatus(this.contactState)} onClick={() => {this.handleNavigationItemPress(this.contactState)}}>{this.contactState}</NavItem>
                   </Nav>
               </Navbar.Collapse>
             </Navbar>

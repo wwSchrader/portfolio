@@ -36,7 +36,6 @@ class App extends Component {
         <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
         <NavigationBar currentPageState={this.state.page} onNavigationPress={this.handleNavigationButtonPress} />
         <MainBody currentState={this.state.page} />
-
       </div>
     );
   }

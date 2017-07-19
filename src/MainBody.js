@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import HomePageBody from './HomePageBody.js';
 import AboutPageBody from './AboutPageBody.js';
-import SkillsPageBody from './SkillsPageBody.js';
 import ProjectsPageBody from './ProjectsPageBody.js';
 import ContactPageBody from './ContactPageBody.js';
 
@@ -25,8 +24,6 @@ class MainBody extends Component {
             return (<ContactPageBody />);
           case 'Projects':
             return (<ProjectsPageBody />);
-          case 'Skills':
-            return (<SkillsPageBody />);
           case 'About':
             return (<AboutPageBody />);
           case 'Home':
