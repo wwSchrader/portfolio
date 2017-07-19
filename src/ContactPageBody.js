@@ -9,28 +9,25 @@ class ContactPageBody extends Component {
                 <Col md={6} mdOffset={3}>
                     <form action="https://formspree.io/wwschrader@gmail.com"
                     method="POST">
-                        <FormGroup>
+                        <FormGroup controlId='name'>
                             <ControlLabel>Name</ControlLabel>
                             <FormControl
-                                id="formControlsName"
                                 type="text"
                                 label="Name"
                                 name="Name"
                                 placeholder="Enter name"/>
                         </FormGroup>
-                        <FormGroup>
+                        <FormGroup controlId='e-mail'>
                             <ControlLabel>E-mail</ControlLabel>
                             <FormControl
-                                id="formControlsEmail"
                                 type="email"
                                 label="Email address"
                                 name="E-mail"
                                 placeholder="Enter email"/>
                         </FormGroup>
-                        <FormGroup>
+                        <FormGroup controlId='message'>
                             <ControlLabel>Message</ControlLabel>
                             <FormControl
-                                id="formControlsMessage"
                                 componentClass="textarea"
                                 label="message"
                                 name="Message"

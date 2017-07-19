@@ -11,7 +11,6 @@ class HomePageBody extends Component {
             <TypeWriter typing={1}>
               <h3>My name is Warren.</h3>
               <p>A programmer, designer, and creator.</p>
-
             </TypeWriter>
           </Jumbotron>
         );
