@@ -20,7 +20,7 @@ class ProjectsPageBody extends Component {
                 {
                     title: "Recipe Box",
                     description: "A simple recipe box that can save your recipes offline",
-                    picture: basePath + './assets/recipe-box.png',
+                    picture: basePath + '/assets/recipe-box.png',
                     pictureAlt: "Recipe Box Website Thumbnail",
                     webUrl: "https://wwschrader.github.io/recipe-box/",
                     gitHubUrl: "https://github.com/wwSchrader/recipe-box"
