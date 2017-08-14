@@ -10,6 +10,22 @@ class ProjectsPageBody extends Component {
         this.state = {
             projects: [
                 {
+                    title: "Voting Web App",
+                    description: "A voting app to ask questions and share opinions",
+                    picture: basePath + '/assets/voting-app.png',
+                    pictureAlt: "Voting App Website Thumbnail",
+                    webUrl: "https://wwschrader.github.io/voting-app/",
+                    gitHubUrl: "https://github.com/wwSchrader/voting-app"
+                },
+                {
+                    title: "React Roguelike Dungeon Crawler",
+                    description: "Fight your way through random levels",
+                    picture: basePath + '/assets/react-roguelike.png',
+                    pictureAlt: "React Roguelike Website Thumbnail",
+                    webUrl: "https://wwschrader.github.io/react-rougelike/",
+                    gitHubUrl: "https://github.com/wwSchrader/react-rougelike"
+                },
+                {
                     title: "Game of Life",
                     description: "A cell simulator using ReactJs",
                     picture: basePath + '/assets/game-of-life.png',
