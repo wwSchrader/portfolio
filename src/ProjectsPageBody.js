@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Col, Thumbnail, Button, Grid, Row} from 'react-bootstrap';
 
+const basePath = process.env.PUBLIC_URL;
+
 class ProjectsPageBody extends Component {
   constructor(props) {
     super(props);
-
-    this.basePath = process.env.PUBLIC_URL;
 
     this.state = {
       projects: [
