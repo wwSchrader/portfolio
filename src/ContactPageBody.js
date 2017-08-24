@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import { FormGroup, ControlLabel, FormControl, Button, Col, Grid} from 'react-bootstrap';
+import React, {Component} from 'react';
+import {FormGroup, ControlLabel, FormControl, Button, Col, Grid}
+        from 'react-bootstrap';
 
 class ContactPageBody extends Component {
 
     render() {
         return (
-            <Grid fluid={true}>
+            <Grid fluid>
                 <Col md={6} mdOffset={3}>
                     <form action="https://formspree.io/wwschrader@gmail.com"
-                    method="POST">
+                        method="POST"
+                    >
                         <FormGroup controlId='name'>
                             <ControlLabel>Name</ControlLabel>
                             <FormControl
                                 type="text"
                                 label="Name"
                                 name="Name"
-                                placeholder="Enter name"/>
+                                placeholder="Enter name"
+                            />
                         </FormGroup>
                         <FormGroup controlId='e-mail'>
                             <ControlLabel>E-mail</ControlLabel>
@@ -23,7 +26,8 @@ class ContactPageBody extends Component {
                                 type="email"
                                 label="Email address"
                                 name="E-mail"
-                                placeholder="Enter email"/>
+                                placeholder="Enter email"
+                            />
                         </FormGroup>
                         <FormGroup controlId='message'>
                             <ControlLabel>Message</ControlLabel>
@@ -31,7 +35,8 @@ class ContactPageBody extends Component {
                                 componentClass="textarea"
                                 label="message"
                                 name="Message"
-                                placeholder="Write message here..."/>
+                                placeholder="Write message here..."
+                            />
                         </FormGroup>
                         <Button bsStyle="primary" type="submit">Submit</Button>
                     </form>
