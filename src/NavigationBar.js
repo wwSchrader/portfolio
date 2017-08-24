@@ -67,7 +67,7 @@ class NavigationBar extends Component {
                 active={this.checkCurrentPageStatus(this.contactState)}
                 onClick={
                   () => this.handleNavigationItemPress(this.contactState)}
-                >{this.contactState}</NavItem>
+            >{this.contactState}</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
