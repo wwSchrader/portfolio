@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
 import particlesParams from './assets/particles.json';
@@ -11,30 +11,37 @@ class App extends Component {
     this.particlesParams = particlesParams;
 
     this.state = {
-      page: 'Home'
-    }
+      page: 'Home',
+    };
 
-    this.handleNavigationButtonPress = this.handleNavigationButtonPress.bind(this);
+    this.handleNavigationButtonPress =
+        this.handleNavigationButtonPress.bind(this);
   }
 
   handleNavigationButtonPress(newPageState) {
-      this.setState({
-        page: newPageState
-      });
-    }
+    this.setState({
+      page: newPageState,
+    });
+  }
 
   render() {
-    var particleStyle = {
+    let particleStyle = {
       position: 'absolute',
       zIndex: -1,
       left: 0,
-      top: 0
+      top: 0,
     };
 
     return (
       <div className="App">
-        <Particles id="particles" params={this.particlesParams} style={particleStyle}/>
-        <NavigationBar currentPageState={this.state.page} onNavigationPress={this.handleNavigationButtonPress} />
+        <Particles id="particles"
+            params={this.particlesParams}
+            style={particleStyle}
+        />
+        <NavigationBar
+            currentPageState={this.state.page}
+            onNavigationPress={this.handleNavigationButtonPress}
+        />
         <MainBody currentState={this.state.page} />
       </div>
     );
