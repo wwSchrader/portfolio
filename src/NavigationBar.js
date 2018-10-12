@@ -35,7 +35,7 @@ class NavigationBar extends Component {
 
   render() {
     return (
-      <Navbar default fluid collapseOnSelect>
+      <Navbar navbar fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>Warren Schrader</Navbar.Brand>
           <Navbar.Toggle />
